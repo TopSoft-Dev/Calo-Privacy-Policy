@@ -2,13 +2,86 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <title>Polityka prywatności</title>
+  <title>Polityka prywatności – Calo</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; padding: 40px; max-width: 800px; margin: auto; background-color: #fdfdfd; color: #333; }
+    h1, h2 { color: #2c3e50; }
+    .lang-switch { margin-bottom: 20px; }
+    .lang-switch button { margin-right: 10px; padding: 5px 15px; cursor: pointer; }
+    .pl, .en { display: none; }
+  </style>
+  <script>
+    function showLang(lang) {
+      document.querySelector('.pl').style.display = lang === 'pl' ? 'block' : 'none';
+      document.querySelector('.en').style.display = lang === 'en' ? 'block' : 'none';
+    }
+    window.onload = () => showLang('pl');
+  </script>
 </head>
 <body>
-  <h1>Polityka prywatności</h1>
-  <p>Twoja prywatność jest dla nas ważna. Ta aplikacja przechowuje dane użytkownika, takie jak wiek, płeć, masa ciała i inne informacje zdrowotne <strong>wyłącznie lokalnie na urządzeniu użytkownika</strong>.</p>
-  <p>Żadne dane nie są przesyłane na zewnętrzne serwery, nie są udostępniane osobom trzecim i nie są wykorzystywane do celów reklamowych.</p>
-  <p>Użytkownik ma pełną kontrolę nad swoimi danymi i może je w każdej chwili usunąć z poziomu aplikacji.</p>
-  <p>Data: 14.04.2025</p>
+  <div class="lang-switch">
+    <button onclick="showLang('pl')">Polski</button>
+    <button onclick="showLang('en')">English</button>
+  </div>
+
+  <!-- POLSKA WERSJA -->
+  <div class="pl">
+    <h1>Polityka prywatności – aplikacja Calo</h1>
+    <p>Data aktualizacji: 14 kwietnia 2025</p>
+
+    <h2>1. Informacje ogólne</h2>
+    <p>Aplikacja <strong>Calo</strong> szanuje prywatność użytkowników. Żadne dane osobowe nie są przesyłane, przechowywane ani udostępniane osobom trzecim. Wszystkie dane wprowadzone przez użytkownika są przechowywane <strong>lokalnie na urządzeniu</strong>.</p>
+
+    <h2>2. Zakres przetwarzanych danych</h2>
+    <p>Aplikacja może przechowywać lokalnie następujące dane, które użytkownik dobrowolnie podaje:</p>
+    <ul>
+      <li>wiek</li>
+      <li>płeć</li>
+      <li>waga</li>
+      <li>spożyte posiłki</li>
+    </ul>
+    <p>Dane te są wykorzystywane wyłącznie do lokalnych obliczeń (np. szacowania kaloryczności posiłków).</p>
+
+    <h2>3. Wykorzystanie ChatGPT</h2>
+    <p>Aplikacja korzysta z modelu językowego ChatGPT do lokalnego przetwarzania danych w celu szacowania kaloryczności. Dane użytkownika nie są przesyłane na serwery OpenAI ani żadne inne zewnętrzne serwery.</p>
+
+    <h2>4. Bezpieczeństwo danych</h2>
+    <p>Dane są przechowywane lokalnie na urządzeniu użytkownika i nie są udostępniane osobom trzecim. Użytkownik ma pełną kontrolę nad swoimi danymi i może je w każdej chwili usunąć z poziomu aplikacji.</p>
+
+    <h2>5. Kontakt</h2>
+    <p>W razie pytań dotyczących polityki prywatności prosimy o kontakt na adres e-mail: <strong>topsoft.pl@gmail.com</strong></p>
+
+    <p>Dziękujemy za zaufanie i korzystanie z aplikacji <strong>Calo</strong>.</p>
+  </div>
+
+  <!-- ENGLISH VERSION -->
+  <div class="en">
+    <h1>Privacy Policy – Calo App</h1>
+    <p>Last updated: April 14, 2025</p>
+
+    <h2>1. General Information</h2>
+    <p>The <strong>Calo</strong> app respects user privacy. No personal data is transmitted, stored, or shared with third parties. All data entered by the user is stored <strong>locally on the device</strong>.</p>
+
+    <h2>2. Scope of Data Processed</h2>
+    <p>The app may locally store the following data provided voluntarily by the user:</p>
+    <ul>
+      <li>age</li>
+      <li>gender</li>
+      <li>weight</li>
+      <li>consumed meals</li>
+    </ul>
+    <p>This data is used solely for local calculations (e.g., estimating meal calories).</p>
+
+    <h2>3. Use of ChatGPT</h2>
+    <p>The app uses the ChatGPT language model for local data processing to estimate calorie values. User data is not sent to OpenAI servers or any external servers.</p>
+
+    <h2>4. Data Security</h2>
+    <p>All data is stored locally on the user's device and is not shared with third parties. The user has full control over their data and can delete it at any time from within the app.</p>
+
+    <h2>5. Contact</h2>
+    <p>If you have any questions regarding this privacy policy, please contact us at: <strong>topsoft.pl@gmail.com</strong></p>
+
+    <p>Thank you for trusting and using the <strong>Calo</strong> app.</p>
+  </div>
 </body>
 </html>
